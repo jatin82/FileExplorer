@@ -30,18 +30,21 @@
                 });
             });
 
+    
     </script>
 </head>
 <body>
 
 <form action="./file/v2" method="post" enctype="multipart/form-data">
-    <input type="file" name="file">
-    <input type="submit" value="Upload File to Server">
+    <input type="file" name="file[]" style="font-size: 42px" multiple>
+    <hr>
+    <input type="submit" value="Upload" style="font-size: 42px">
 </form>
 <hr>
 <div class="progress">
     <div class="bar"></div>
-    <p>Completed : <div class="percent">0%</div>
+    <p>Completed :
+    <div class="percent">0%</div>
     </p>
 </div>
 
